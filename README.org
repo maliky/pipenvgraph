@@ -1,0 +1,25 @@
+* Pipenvgraph
+pipenvgraph is a small utility to draw the graph of depencies of a python virtual (pipenv) installation
+
+** Requirements
+ This module requires `pipenv` and `graphviz`.
+
+** What does it do ?
+  Then It simply run `pipenv graph` and parse the output into a graph '.gv' file sent to graphviz to produce an visual representation of the dependencies graphe of your pipenv installation.
+
+** Usage
+ Clone the repository
+ Check the code. It's very small
+
+ On the command ligne from within the virtual env you which to inspect run
+ #+BEGIN_SRC bash  
+ pipenvgraph -o png -f mygraph 
+ #+END_SRC
+
+ This will produce a mygraph.png file in your local folder.
+ I hope it will not be as messing as this one:
+
+ [[file:pipenvgraph.png]]
+
+** Remerciements
+ To irc, stackoverflow, coursera and Edx for helping me get up to speed in python.
